@@ -2,9 +2,9 @@
 
 namespace BlankFramework\RoutingInterfaces;
 
-use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ServerRequestInterface;
 
 interface SimpleRouterInterface
 {
-    public function routeRequest(RequestInterface $request): RouteInterface;
+    public function routeRequest(ServerRequestInterface $request): RouteInterface;
 }
